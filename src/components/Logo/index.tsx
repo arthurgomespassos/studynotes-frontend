@@ -8,7 +8,7 @@ interface Props {
 
 export default function Logo({ src, height, href }: Props) {
   return (
-    <a href={href}>
+    <a href={href} className="logo">
       <img src={src} height={height} alt="study notes logo" />
     </a>
   );

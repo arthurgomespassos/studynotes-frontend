@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
-// import Login from './pages/Login';
 
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
+
 import GlobalStyle from './styles/GlobalStyles';
 import Header from './components/Header';
+import Routes from './routes';
+import Footer from './components/Footer';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -24,6 +26,8 @@ function App() {
       <div className="App">
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} theme={theme} />
+        <Routes />
+        <Footer />
       </div>
     </ThemeProvider>
   );

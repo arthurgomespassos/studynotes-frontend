@@ -9,11 +9,11 @@ declare module 'styled-components' {
       primary: string;
       background: string;
       text: string;
+      red: string;
       success: string;
       info: string;
       error: string;
       warning: string;
-      headerText: string;
       headerTextHover: string;
     };
   }

@@ -16,7 +16,7 @@ export default function Header({ toggleTheme, theme }: Props) {
   );
 
   return (
-    <header>
+    <header className="header">
       <Nav>
         <Logo src={logoImage} height="30px" href="/" />
         <li>
