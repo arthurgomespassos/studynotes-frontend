@@ -22,5 +22,9 @@
   },
   "include": [
     "src"
+  ],
+  // esse files é pra botar as declaration files que vem com uns autocomplete maneiro
+  "files": [
+    "src/styles/styled.d.ts"
   ]
 }
