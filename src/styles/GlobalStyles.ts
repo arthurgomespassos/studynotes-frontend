@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import Pacifico from '../fonts/Pacifico-Regular.ttf';
 import Roboto from '../fonts/Roboto-Regular.ttf';
+import RobotoBold from '../fonts/Roboto-Bold.ttf';
 
 export default createGlobalStyle`
   @font-face {
@@ -12,6 +13,10 @@ export default createGlobalStyle`
     font-family: Roboto;
     src: url(${Roboto});
   }
+  @font-face {
+    font-family: Roboto Bold;
+    src: url(${RobotoBold});
+  }
 
   *{
     margin: 0;
@@ -19,6 +24,7 @@ export default createGlobalStyle`
     border: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: Roboto;
   }
 
   html, body, #root {
@@ -27,7 +33,7 @@ export default createGlobalStyle`
 
   body{
     font-size: 1.6rem;
-    font-family: -apple-system, Roboto, Ubuntu, sans-serif;
+    font-family: Roboto;
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text}
   }

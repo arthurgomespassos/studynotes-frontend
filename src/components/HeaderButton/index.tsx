@@ -1,5 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Btn } from './styled';
 
-export default function HeaderButton() {
-  return <h1>teste header button</h1>;
+interface Props {
+  to: string;
+  text: string;
+}
+
+export default function HeaderButton({ to, text }: Props) {
+  return (
+    <Link to={to} className="button">
+      <Btn type="button">{text}</Btn>
+    </Link>
+  );
 }
