@@ -1,15 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { LogoText } from './styled';
 
 interface Props {
-  height: string;
-  src: string;
-  href: string;
+  fontSize: string;
+  to: string;
 }
 
-export default function Logo({ src, height, href }: Props) {
+export default function Logo({ fontSize, to }: Props) {
   return (
-    <a href={href} className="logo">
-      <img src={src} height={height} alt="study notes logo" />
-    </a>
+    <Link to={to} className="logo">
+      <LogoText style={{ fontSize }} className="logo">
+        Study Notes
+      </LogoText>
+    </Link>
   );
 }

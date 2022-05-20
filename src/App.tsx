@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
-
 import GlobalStyle from './styles/GlobalStyles';
 import Header from './components/Header';
 import Routes from './routes';
@@ -25,9 +25,11 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyle />
-        <Header toggleTheme={toggleTheme} theme={theme} />
-        <Routes />
-        <Footer />
+        <BrowserRouter>
+          <Header toggleTheme={toggleTheme} theme={theme} />
+          <Routes />
+          <Footer />
+        </BrowserRouter>
       </div>
     </ThemeProvider>
   );

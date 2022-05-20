@@ -7,14 +7,17 @@ declare module 'styled-components' {
 
     colors: {
       primary: string;
+      primaryDark: string;
+      primaryDarker: string;
       background: string;
       text: string;
-      red: string;
+      invertedText: string;
+      cancel: string;
       success: string;
       info: string;
       error: string;
+      edit: string;
       warning: string;
-      headerTextHover: string;
     };
   }
 }

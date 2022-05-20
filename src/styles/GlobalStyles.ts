@@ -1,9 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
+import Pacifico from '../fonts/Pacifico-Regular.ttf';
+import Roboto from '../fonts/Roboto-Regular.ttf';
+
 export default createGlobalStyle`
   @font-face {
-    font-family: ShadowsIntoLight;
-    src: url(../../fonts/ShadowsIntoLight-Regular.ttf);
+    font-family: Pacifico;
+    src: url(${Pacifico});
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(${Roboto});
   }
 
   *{
@@ -20,7 +27,7 @@ export default createGlobalStyle`
 
   body{
     font-size: 1.6rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, Roboto, Ubuntu, sans-serif;
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text}
   }
@@ -44,7 +51,7 @@ export default createGlobalStyle`
   .App {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 5rem 1fr 3rem;
+    grid-template-rows: 5rem 1fr 2.2rem;
     grid-template-columns: 1fr;
     grid-template-areas: 
     'header'

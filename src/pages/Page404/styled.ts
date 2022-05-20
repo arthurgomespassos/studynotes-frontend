@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding-top: 19vh;
-  font-family: ShadowsIntoTheLight;
+  background-color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.text};
+  padding: 2rem;
   font-size: 4rem;
   font-weight: bolder;
-  height: 100%;
-  border: 2px solid green;
+  height: fit-content;
   text-align: center;
+  width: fit-content;
+  margin: auto;
+  border-radius: 2rem;
 
   p {
     margin: 0 auto;

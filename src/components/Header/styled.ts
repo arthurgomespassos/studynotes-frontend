@@ -9,14 +9,13 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
 
-  a:not(.logo) {
+  a {
     display: inline-block;
-    color: ${(props) => props.theme.colors.background};
-    font-weight: 500;
+    color: ${(props) => props.theme.colors.text};
+    font-weight: 400;
     padding: 2rem 0.5rem;
     &:hover {
-      color: ${(props) => props.theme.colors.headerTextHover};
-      background-color: #124dc0;
+      background-color: ${(props) => props.theme.colors.primaryDark};
     }
   }
 `;

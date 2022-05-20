@@ -7,9 +7,10 @@ export const Container = styled.footer`
   padding: 0 1rem;
   height: 100%;
   background-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.background};
+  color: ${(props) => props.theme.colors.text};
   font-weight: bold;
+  font-size: 1.2rem;
   span {
-    color: ${(props) => props.theme.colors.red};
+    color: ${(props) => props.theme.colors.cancel};
   }
 `;
